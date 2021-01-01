@@ -1,0 +1,38 @@
+body{
+	background-image: url("../../images/wall.jpg");
+}
+figure{
+	float: right;
+	width: 45%;
+	font-size: small;
+	text-align: center;
+	color: white;
+	font-style: italic;
+	text-indent: 0;
+	border: thin silver solid;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+section {
+		display: block;
+		color: white;
+		font-family: Geneva;
+		font-size: 15px;
+}
+h2{
+	text-align: center;
+	font-size: 35px;
+	font-family: Geneva;
+	color: orange;
+}
+h3{
+	padding: 15px;
+	font-size: 25px;
+	color: lightblue;
+}
+#commu,ul li{
+	color: lightblue;
+	padding: 10px 5px;
+	font-size: 23px;
+	font-weight: bold;
+}
