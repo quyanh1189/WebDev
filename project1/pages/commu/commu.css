@@ -13,12 +13,6 @@ figure{
 	margin: 0.5em;
 	padding: 0.5em;
 }
-section {
-		display: block;
-		color: white;
-		font-family: Geneva;
-		font-size: 15px;
-}
 h2{
 	text-align: center;
 	font-size: 35px;
@@ -26,13 +20,18 @@ h2{
 	color: orange;
 }
 h3{
-	padding: 15px;
+	padding: 10px;
 	font-size: 25px;
 	color: lightblue;
 }
-#commu,ul li{
+ul li{
 	color: lightblue;
 	padding: 10px 5px;
 	font-size: 23px;
 	font-weight: bold;
+}
+p {
+	color: white;
+	font-family: Geneva;
+	font-size: 15px;
 }
