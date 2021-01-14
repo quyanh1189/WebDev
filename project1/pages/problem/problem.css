@@ -38,3 +38,17 @@ a:active{
 input:focus{
 	background-color: lightgrey;
 }
+.submit{
+	background: #4caf58bf;
+    border-radius: 7px;
+    font-size: 19px;
+    padding: 4px;
+}
+fieldset{
+	border-radius: 15px;
+	background-color: lightblue;
+}
+select, input{
+	border-radius: 5px;
+	background-color: lightgreen;
+}

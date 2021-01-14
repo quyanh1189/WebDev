@@ -15,34 +15,42 @@
 		<fieldset>
     	<legend>Personalia:</legend>
     		<div>
-			<label>Name</label>
-			<input type="text" name="name" placeholder="Enter your name">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
 			</div>
 			<br>
 			<div>
-				<label>Age</label>
-				<input type="number" name="age" value="18">
+				<label for="age">Age</label>
+				<input type="number" id="age" name="age" value="18" required>
 			</div>
 			<br>
 			<div>
-				<label>Birthday</label>
-				<input type="date" name="birthday">
+				<label for="birthday">Birthday</label>
+				<input type="date" id="birthday" name="birthday" required>
 			</div>
 			<br>
 			<div>
-				<label>Gender</label>
-				<select name="gender">
+				<label for="gender">Gender</label>
+				<select name="gender" id="gender">
 					<option value="male">Male</option>
 					<option value="female">Female</option>
-			</select>
+				</select>
 			</div>
 			<br>
 			<div>
-				<label>Email</label>
-				<input type="email" name="email" placeholder="vana123@gmail.com">
+				<label for="email">Email</label>
+				<input 
+						type="email" 
+						id="email" 
+						name="email" 
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+						title="Email must be more than 2 characters or more and contain only letters, numbers and periods (.)"
+						placeholder="quyanh123@gmail.com"
+						required
+				>
 			</div>
 			<br>
-			<input type="submit" name="submit" value="Submit">
+			<input type="submit" class="submit" name="submit" value="Submit">
 		</fieldset>
 	<fieldset>
     	<legend>Survey about problem solving:</legend>
@@ -58,7 +66,7 @@
     		<label> I have initiative.</label><br>
     		<input type="checkbox" name="analytical">
     		<label> I have level-headedness.</label><br><br>
-    		<input type="submit" value="Submit">
+    		<input type="submit" class="submit" name="submit" value="Submit">
     </fieldset>
 	</form>
 	<div id="contact">
