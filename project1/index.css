@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
 	background-image: url("./images/wall.jpg");
 }
@@ -7,12 +11,14 @@ h1{
 	color: darkorange;
 	text-align: center;
 	font-weight: bold;
+	padding: 20px;
 }
 section{
 	font-family: arial;
 	font-size: 20px;
 	text-align: center;
 	color: orange;
+	padding: 15px;
 }
 section p.special{
 	display: inline-block;
@@ -21,19 +27,38 @@ section p.special{
 }
 nav{
 	background: lightgrey;
-	height: 80px;
+	min-height: 80px;
 	width: 100%;
 	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+nav ul{
+	padding: 10px 0;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 nav ul li{
 	display: inline-block;
-	margin: 0 8px;
-	padding-top: 30px;
+	width: 200px;
+	height: 50px;
+	margin: 8px;
 }
 nav ul li a{
+	height: 100%;
+	width: 100%;
 	color: black;
 	font-size: 15px;
-	padding: 20px 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
@@ -49,3 +74,65 @@ a:hover{
 a:active{
 	background: lightblue;
 }
+.checkbtn{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+/* mobile */
+@media screen and (max-width:739px) {
+	nav {
+		position: relative;
+		height: 70px;
+		width: 100%;
+		display: block;
+	}
+	.checkbtn{
+		display: block;
+		position: absolute;
+		left: 20px;
+		top: 0;
+	}
+	nav ul{
+		width: 100%;
+		min-height: 200px; 
+		background-color: lightgrey;
+		top: 80px;
+		left: -110%;
+		transition: all .5s;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid black;
+	}
+	nav ul li{
+		display: flex;
+		position: relative;
+		width: 200px;
+		height: 50px;
+		margin: 15px 5px;
+		line-height: 30px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+/* tablet */
+@media screen and (min-width:740px) and (max-width: 1023px){
+
+}
+	
+/* PC*/
+@media screen and (min-width: 1024px){
+
+}
+	
